@@ -3,116 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP Övningar</title>
+    <title>PHP OOP Introduktionsövningar</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>PHP Övningar vecka 6</h1>
+<h1>PHP OOP Introduktion - Vecka 1</h1>
 
 <div class="grid-container">
-<div class="grid-item">
 
-Övning 1:<h2>DeleteUser</h2>
+<div class="grid-item">
+<h2>Övning 1: Skapa en klass</h2>
 <?php
-// Skriv ett PHP-skript som tar bort en användare från databasen baserat på användarens id. Visa ett meddelande när användaren är borttagen.
+// Skapa en enkel klass som heter Animal.
+// Lägg till en egenskap $name och en metod showName() som skriver ut djurets namn.
 ?>
 </div>
 
 <div class="grid-item">
-Övning 2:<h2>CheckPasswordStrength</h2>
+<h2>Övning 2: Konstruktor</h2>
 <?php
-// Skriv ett PHP-skript för att kontrollera styrkan på ett lösenord (minst 8 tecken, minst en siffra, minst en stor bokstav).
+// Lägg till en konstruktor i Animal-klassen som tar emot namnet som parameter och sparar det i $name.
 ?>
 </div>
 
 <div class="grid-item">
-Övning 3:<h2>FormValidation</h2>
+<h2>Övning 3: Skapa objekt</h2>
 <?php
-// Skriv ett PHP-skript som validerar ett användarformulär (t.ex. namn, e-post, lösenord) innan det sparas i databasen.
+// Skapa två objekt av Animal-klassen med olika namn och anropa showName().
 ?>
 </div>
 
 <div class="grid-item">
-Övning 4:<h2>FileUpload</h2>
+<h2>Övning 4: Lägg till en ny egenskap</h2>
 <?php
-// Skriv ett PHP-skript hämta alla användare från en databas och sedan sparar de till ett objekt
+// Lägg till en ny egenskap $age i Animal-klassen.
+// Uppdatera konstruktorn så att den också sätter åldern.
+?>
+</div>
+
+<div class="grid-item"> 
+<h2>Övning 5: Metod för att visa all information</h2>
+<?php
+// Lägg till en metod showInfo() som skriver ut både namn och ålder.
 ?>
 </div>
 
 <div class="grid-item">
-Övning 5:<h2>DisplayUserProfile</h2>
+<h2>Övning 6: Private & Public</h2>
 <?php
-// Skriv ett PHP-skript för att visa användarens profil baserat på information som lagras i databasen.
+// Ändra $name och $age till private och skapa getter-metoder getName() och getAge() för att hämta värdena.
 ?>
 </div>
 
 <div class="grid-item">
-Övning 6:<h2>LogoutFunctionality</h2>
+<h2>Övning 7: Arv</h2>
 <?php
-// Skriv ett PHP-skript som låter användaren logga ut genom att ta bort sessionen.
+// Skapa en ny klass Dog som ärver från Animal.
+// Lägg till en egenskap $breed och en metod showBreed().
 ?>
 </div>
 
 <div class="grid-item">
-Övning 7:<h2>SortUsersByName</h2>
+<h2>Övning 8: Använda arv</h2>
 <?php
-// Skriv ett PHP-skript som hämtar alla användare från databasen och sorterar dem i alfabetisk ordning baserat på deras namn.
-
+// Skapa ett objekt av Dog och anropa både showInfo() och showBreed().
 ?>
 </div>
 
 <div class="grid-item">
-Övning 8:<h2>UpdateUserInfo</h2>
+<h2>Övning 9: Interface</h2>
 <?php
-// Skriv ett PHP-skript som uppdaterar en användares information (t.ex. namn, e-post) baserat på användarens id.
+// Skapa ett interface SoundMaker med en metod makeSound().
+// Implementera detta i Dog-klassen.
 ?>
 </div>
 
 <div class="grid-item">
-Övning 9:<h2>SearchUsers</h2>
+<h2>Övning 10: Skapa en lista med objekt</h2>
 <?php
-// Skriv ett PHP-skript för att söka efter användare i databasen baserat på ett namn eller e-postadress.
+// Skapa en array där du lagrar flera Dog-objekt med olika raser och namn.
+// Loopa igenom arrayen och anropa showInfo() för varje objekt.
 ?>
 </div>
 
 <div class="grid-item">
-Övning 10:<h2>Pagination</h2>
+<h2>Övning 11: Filtrera objekt i en array</h2>
 <?php
-// Skriv ett PHP-skript som implementerar paginering på en användarlista för att visa ett begränsat antal användare per sida.
-?>
-</div>
-
-
-<div class="grid-item">
-Övning 11:<h2>OOPinPHP</h2>
-<?php
-// Skapa en klass som heter user. Ge den alla properties som finns i din databas för users. Skapa även en konstruktor och använd $this-> för att sätta inparametrars värde till properties
-//Skapa också en metod för att echo ut namnet på usern.
+// Skapa en metod filterByBreed($breed) som returnerar alla Dog-objekt i arrayen med en viss ras.
 ?>
 </div>
 
 <div class="grid-item">
-Övning 12:<h2>ObjectToDB</h2>
+<h2>Övning 12: Statisk metod</h2>
 <?php
-// Skriv ett PHP-skript som hämtar en användare från databasen och skriver alla kolumner till ett User-objekt.
+// Lägg till en statisk metod getType() i Animal-klassen som returnerar "Djur".
+// Anropa den utan att skapa ett objekt.
 ?>
 </div>
 
 <div class="grid-item">
-Övning 13:<h2>ObjectToDB</h2>
+<h2>Övning 13: Magic Methods</h2>
 <?php
-// Gör samma sak fast omvänd ordning från förra uppgiften. Spara ett objekt som innehåller användarinformation till tabellen
+// Lägg till __toString() i Animal-klassen så att den returnerar namnet när objektet skrivs ut.
 ?>
 </div>
 
 <div class="grid-item">
-Övning 14:<h2>DBtoObjectToArray</h2>
+<h2>Övning 14: Autoload</h2>
 <?php
-// Hämta alla users från databasen, gör om de till objekt och skriv de sedan till en array full med objekt.
+// Använd spl_autoload_register() för att automatiskt ladda klasser från en "classes"-mapp.
 ?>
 </div>
 
-</div>
 </div>
 </body>
 </html>
