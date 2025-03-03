@@ -115,6 +115,14 @@
 ?>
 </div>
 
+<div class="grid-item">
+<h2>Övning 15: Dragon Slayer</h2>
+<?php
+// Bygg två klasser, en DragonSlayer och en ElderDragon. Bygg OOP-kod för att klasserna ska slåss mot varandra.
+// Lägg in valfria properties, metoder och sedan kör en simulerad strid till sista andetag.
+?>
+</div>
+
 </div>
 </body>
 </html>
